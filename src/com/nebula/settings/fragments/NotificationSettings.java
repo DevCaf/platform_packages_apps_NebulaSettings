@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2017 The PixelDust Project
+ * Copyright (C) 2017 The Nebula Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.pixeldust.settings.fragments;
+package com.nebula.settings.fragments;
 
 import android.os.Bundle;
 import android.support.v7.preference.PreferenceScreen;
@@ -29,13 +29,13 @@ public class NotificationSettings extends SettingsPreferenceFragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.pixeldust_settings_notifications);
+        addPreferencesFromResource(R.xml.nebula_settings_notifications);
         PreferenceScreen prefScreen = getPreferenceScreen();
     }
 
     @Override
     protected int getMetricsCategory() {
-        return MetricsEvent.PIXELDUST;
+        return MetricsEvent.NEBULA;
     }
 }
 
