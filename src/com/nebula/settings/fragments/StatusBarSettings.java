@@ -17,6 +17,7 @@ import android.preference.SwitchPreference;
 import android.provider.Settings;
 import com.android.settings.R;
 
+import java.util.Locale;
 import android.text.TextUtils;
 import android.view.View;
 

@@ -28,7 +28,7 @@
         android:key="quicksettings_tiles_category"
         android:title="@string/quicksettings_tiles_category">
 
-        <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
+        <com.nebula.settings.preferences.SystemSettingSwitchPreference
             android:key="quick_settings_vibrate"
             android:title="@string/quick_settings_vibrate_title"
             android:summary="@string/quick_settings_vibrate_summary"

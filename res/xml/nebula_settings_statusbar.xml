@@ -35,4 +35,10 @@
             android:key="statusbar_battery"
             android:title="@string/battery_title"
             android:fragment="com.nebula.settings.fragments.StatusbarBatteryStyle" />
+
+    <PreferenceScreen
+            android:key="network_traffic_state"
+            android:fragment="com.nebula.settings.fragments.NetworkTraffic"
+            android:title="@string/network_traffic_title" />
+
 </PreferenceScreen>
