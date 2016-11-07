@@ -30,4 +30,9 @@
                 android:targetClass="com.cyanogenmod.lockclock.preference.Preferences" />
         </PreferenceScreen>
 
+        <PreferenceScreen
+             android:key="wakelock_blocker"
+             android:fragment="com.nebula.settings.fragments.WakeLockBlocker"
+             android:title="@string/wakelock_blocker_title" />
+
 </PreferenceScreen>
