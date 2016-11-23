@@ -18,48 +18,73 @@
     android:title="@string/nebula_settings_title" >
 
         <!-- Status Bar -->
-        <PreferenceScreen android:fragment="com.nebula.settings.fragments.StatusBarSettings"
-            android:icon="@drawable/ic_settings_statusbar"
-            android:key="statusbar_category" android:title="@string/statusbar_title" />
+        <PreferenceScreen
+            android:key="statusbar_category"
+            android:title="@string/statusbar_title"
+            android:fragment="com.nebula.settings.fragments.StatusBarSettings"
+            android:icon="@drawable/ic_settings_statusbar"/>
 
         <!-- Quick Settings panel -->
-        <PreferenceScreen android:fragment="com.nebula.settings.fragments.QuickSettings"
-            android:icon="@drawable/ic_settings_quicksettings"
-            android:key="quicksettings_category" android:title="@string/quicksettings_title" />
+        <PreferenceScreen
+            android:key="quicksettings_category"
+            android:title="@string/quicksettings_title"
+            android:fragment="com.nebula.settings.fragments.QuickSettings"
+            android:icon="@drawable/ic_settings_quicksettings"/>
 
         <!-- Buttons -->
-        <PreferenceScreen android:fragment="com.nebula.settings.fragments.ButtonSettings"
-            android:icon="@drawable/ic_settings_buttons"
-            android:key="buttonsettings_category" android:title="@string/button_title" />
+        <PreferenceScreen
+            android:key="buttonsettings_category"
+            android:title="@string/button_title"
+            android:fragment="com.nebula.settings.fragments.ButtonSettings"
+            android:icon="@drawable/ic_settings_buttons"/>
 
         <!-- Navigation Bar -->
-        <PreferenceScreen android:fragment="com.nebula.settings.fragments.NavigationBarSettings"
-            android:icon="@drawable/ic_settings_navbar"
-            android:key="navigationbar_category" android:title="@string/navbar_title" />
+        <PreferenceScreen
+            android:key="navigationbar_category"
+            android:title="@string/navbar_title" 
+            android:fragment="com.nebula.settings.fragments.NavigationBarSettings"
+            android:icon="@drawable/ic_settings_navbar"/>
 
         <!-- Gestures -->
-        <PreferenceScreen android:fragment="com.nebula.settings.fragments.GestureSettings"
-            android:icon="@drawable/ic_settings_gestures"
-            android:key="gestures_category" android:title="@string/gestures_title" />
+        <PreferenceScreen
+            android:key="gestures_category"
+            android:title="@string/gestures_title" 
+            android:fragment="com.nebula.settings.fragments.GestureSettings"
+            android:icon="@drawable/ic_settings_gestures"/>
 
         <!-- Lock Screen -->
-        <PreferenceScreen android:fragment="com.nebula.settings.fragments.LockScreenSettings"
-            android:icon="@drawable/ic_settings_lockscreens"
-            android:key="lockscreen_category" android:title="@string/lockscreen_title" />
+        <PreferenceScreen
+            android:key="lockscreen_category"
+            android:title="@string/lockscreen_title" 
+            android:fragment="com.nebula.settings.fragments.LockScreenSettings"
+            android:icon="@drawable/ic_settings_lockscreens"/>
 
         <!-- Power Menu -->
-        <PreferenceScreen android:fragment="com.nebula.settings.fragments.PowerMenuSettings"
-            android:icon="@drawable/ic_settings_powermenu"
-            android:key="powermenu__category" android:title="@string/powermenu_title" />
+        <PreferenceScreen
+            android:key="powermenu_category"
+            android:title="@string/powermenu_title" 
+            android:fragment="com.nebula.settings.fragments.PowerMenuSettings"
+            android:icon="@drawable/ic_settings_powermenu"/>
 
         <!-- Recents -->
-        <PreferenceScreen android:fragment="com.nebula.settings.fragments.RecentsSettings"
-            android:icon="@drawable/ic_settings_recents"
-            android:key="recents_category" android:title="@string/recents_title" />
+        <PreferenceScreen
+            android:key="recents_category"
+            android:title="@string/recents_title"
+            android:fragment="com.nebula.settings.fragments.RecentsSettings"
+            android:icon="@drawable/ic_settings_recents"/>
+
+        <!-- Notifications -->
+        <PreferenceScreen
+            android:key="notifications_category"
+            android:title="@string/notifications_title"
+            android:fragment="com.nebula.settings.fragments.NotificationSettings"
+            android:icon="@drawable/ic_settings_notifications"/>
 
         <!-- Misc -->
-        <PreferenceScreen android:fragment="com.nebula.settings.fragments.MiscSettings"
-            android:icon="@drawable/ic_settings_miscs"
-            android:key="misc_category" android:title="@string/misc_title" />
+        <PreferenceScreen
+            android:key="misc_category"
+            android:title="@string/misc_title" 
+            android:fragment="com.nebula.settings.fragments.MiscSettings"
+            android:icon="@drawable/ic_settings_miscs"/>
 
 </PreferenceScreen>
