@@ -57,6 +57,10 @@ public class ColorPickerDialog extends Dialog implements OnColorChangedListener,
 
     private OnColorChangedListener mListener;
 
+    public interface OnColorChangedListener {
+        public void onColorChanged(int color);
+    }
+
     public ColorPickerDialog(Context context, int initialColor, int defaultColor, String initKey, String itemTitle) {
         super(context);
 
@@ -77,7 +81,7 @@ public class ColorPickerDialog extends Dialog implements OnColorChangedListener,
         LayoutInflater inflater = (LayoutInflater) getContext().getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
         // null root seems fine here
-        View layout = inflater.inflate(R.layout.dialog_color_picker, null);
+        View layout = inflater.inflate(R.layout.dialog_pixel_color_picker, null);
 
         setContentView(layout);
         mKey = initKey;
@@ -238,9 +242,5 @@ public class ColorPickerDialog extends Dialog implements OnColorChangedListener,
             }
         }
         dismiss();
-    }
-
-    public interface OnColorChangedListener {
-        void onColorChanged(int color);
     }
 }
