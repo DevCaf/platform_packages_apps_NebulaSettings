@@ -26,7 +26,7 @@
          <com.nebula.settings.preferences.SystemSettingSwitchPreference
             android:key="powermenu_screenshot"
             android:title="@string/powermenu_screenshot"
-            android:defaultValue="true" />
+            android:defaultValue="false" />
 
          <com.nebula.settings.preferences.SystemSettingSwitchPreference
             android:key="powermenu_screenrecord"
