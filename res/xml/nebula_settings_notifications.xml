@@ -31,13 +31,6 @@
         android:title="@string/heads_up_notifications"
         android:fragment="com.nebula.settings.fragments.HeadsUpSettings" />
 
-    <!-- Global heads-up toggle -->
-    <com.nebula.settings.preferences.SystemSettingSwitchPreference
-        android:key="heads_up_notifications_user_enabled"
-        android:title="@string/heads_up_notifications_enabled_title"
-        android:summary="@string/heads_up_notifications_enabled_summary"
-        android:defaultValue="true" />
-
     <!-- Headset notification -->
     <com.nebula.settings.preferences.SystemSettingSwitchPreference
         android:key="headset_plugged_notification"
