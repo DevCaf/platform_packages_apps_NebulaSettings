@@ -24,6 +24,7 @@ import com.android.internal.util.nebula.ActionUtils;
 import com.android.settings.DevelopmentSettings;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
+import com.nebula.settings.utils.Utils;
 
 import java.util.Arrays;
 import java.util.HashSet;
@@ -48,6 +49,11 @@ public class MiscSettings extends SettingsPreferenceFragment implements
 
         addPreferencesFromResource(R.xml.nebula_settings_misc);
         PreferenceScreen prefs = getPreferenceScreen();
+
+        PreferenceCategory incallVibCategory = (PreferenceCategory) findPreference(INCALL_VIB_OPTIONS);
+        if (!Utils.isVoiceCapable(getActivity())) {
+            prefs.removePreference(incallVibCategory);
+        }
 
         mScrollingCachePref = (ListPreference) findPreference(SCROLLINGCACHE_PREF);
         mScrollingCachePref.setValue(SystemProperties.get(SCROLLINGCACHE_PERSIST_PROP,
