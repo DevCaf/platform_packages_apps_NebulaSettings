@@ -18,7 +18,7 @@
                   xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
                   android:title="@string/recent_app_sidebar_title">
 
-    <com.pixeldust.settings.preferences.CustomSeekBarPreference
+    <com.nebula.settings.preferences.CustomSeekBarPreference
             android:key="recent_app_sidebar_scale"
             android:title="@string/recent_app_sidebar_scale_title"
             settings:min="60"
@@ -27,7 +27,7 @@
             settings:units="%"
             android:persistent="false" />
 
-    <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
+    <com.nebula.settings.preferences.SystemSettingSwitchPreference
             android:key="recent_app_sidebar_disable_labels"
             android:title="@string/recent_app_sidebar_hide_labels_title"
             android:disableDependentsState="true"
@@ -48,7 +48,7 @@
             alphaSlider="true"
             android:persistent="false" />
 
-    <com.pixeldust.settings.preferences.SystemSettingSwitchPreference
+    <com.nebula.settings.preferences.SystemSettingSwitchPreference
             android:key="recent_app_sidebar_open_simultaneously"
             android:title="@string/recent_app_sidebar_open_simultaneously_title"
             android:summary="@string/recent_app_sidebar_open_simultaneously_summary"
