@@ -39,7 +39,7 @@ import android.view.Surface;
 import android.view.WindowManager;
 
 public final class Utils {
-    private static final String TAG = "PixeldustSettingsUtils";
+    private static final String TAG = "NebulaSettingsUtils";
 
     // Device types
     private static final int DEVICE_PHONE = 0;
